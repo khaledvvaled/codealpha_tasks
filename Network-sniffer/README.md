@@ -15,15 +15,15 @@ The sniffer is designed to identify source and destination IP addresses, protoco
 
 ### 1. The Vulnerable Target
 For testing purposes, I used a deliberately vulnerable web application to simulate a real-world scenario where data is sent without encryption.
-![Target Website](screenshorts/test.png)
+![Target Website](screenshots/test.png)
 
 ### 2. The Sniffer Script
 The core logic of the sniffer was developed using Python's `scapy` library, focusing on filtering IP layers and extracting raw data.
-![Python Script](screenshorts/script.png)
+![Python Script](screenshots/script.png)
 
 ### 3. Successful Data Capture (POC)
 The sniffer successfully captured a **POST request**, revealing the captured **username and password** in clear text within the payload.
-![Data Captured](screenshorts/sniff.png)
+![Data Captured](screenshots/sniff.png)
 
 ## 🛠️ Tools & Technologies Used
 - **Python 3**
