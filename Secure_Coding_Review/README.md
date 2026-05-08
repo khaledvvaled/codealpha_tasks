@@ -15,13 +15,13 @@ I used **Bandit**, a security linter for Python, to scan the vulnerable source c
 
 ### 1. SQL Injection (SQLi)
 * **Vulnerability:** Concatenating user credentials directly into the SQL query string.
-* **Exploit:** Using `' OR 1=1 --` to bypass login.
+* **Exploit:** Using `' admin--` to bypass login.
 ![SQLi Payload](screenshots/2.vulnerable_sqli.png)
 ![SQLi Bypass Success](screenshots/3.vulnerable_sqli1.png)
 
 ### 2. Cross-Site Scripting (XSS)
 * **Vulnerability:** Rendering user input directly from the URL without escaping.
-* **Exploit:** Injecting `<script>alert('Hacked')</script>` via the `name` parameter.
+* **Exploit:** Injecting `<script>alert()</script>` via the `name` parameter.
 ![XSS Payload](screenshots/4.vulnerable_xss.png)
 ![XSS Execution](screenshots/5.vulnerable_xss1.png)
 
